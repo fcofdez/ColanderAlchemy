@@ -148,10 +148,11 @@ class SQLAlchemySchemaNode(colander.SchemaNode):
                     name_overrides_copy
                 )
             elif isinstance(prop, RelationshipProperty):
-                node = self.get_schema_from_relationship(
-                    prop,
-                    name_overrides_copy
-                )
+                # node = self.get_schema_from_relationship(
+                #     prop,
+                #     name_overrides_copy
+                # )
+                pass
             else:
                 log.debug(
                     'Attribute %s skipped due to not being '
