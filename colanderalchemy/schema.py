@@ -124,6 +124,9 @@ class SQLAlchemySchemaNode(colander.SchemaNode):
         self.kwargs = kwargs or {}
         self.add_nodes(self.includes, self.excludes, self.overrides)
 
+    def test(self):
+        return self
+
     def add_nodes(self, includes, excludes, overrides):
 
         # sorted to maintain the order in which the attributes
@@ -152,7 +155,7 @@ class SQLAlchemySchemaNode(colander.SchemaNode):
                 #     prop,
                 #     name_overrides_copy
                 # )
-                pass
+                print "satasdasd"
             else:
                 log.debug(
                     'Attribute %s skipped due to not being '
