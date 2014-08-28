@@ -9,7 +9,7 @@ import os
 import sys
 from setuptools import setup, find_packages
 
-version = '0.3.2dev'
+version = '0.3.3dev'
 
 here = os.path.abspath(os.path.dirname(__file__))
 README = open(os.path.join(here, 'README.rst')).read()
@@ -40,7 +40,7 @@ setup(name='ColanderAlchemy',
       keywords='serialize deserialize validate schema validation colander sqlalchemy',
       author='Stefano Fontanelli',
       author_email='s.fontanelli@asidev.com',
-      url='https://github.com/stefanofontanelli/ColanderAlchemy',
+      #      url='https://github.com/stefanofontanelli/ColanderAlchemy',
       license='MIT',
       packages=find_packages(),
       include_package_data=True,
